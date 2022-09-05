@@ -1,0 +1,1069 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* font-size  */
+.text-xxs {
+    font-size: 12px;
+}
+
+.text-xs {
+    font-size: 14px;
+}
+
+.text-s {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-m {
+    font-size: 18px;
+}
+
+.text-l {
+    font-size: 20px;
+}
+
+.text-xl {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.text-xxl {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.text-xxxl {
+    font-size: 49px;
+    font-weight: bolder;
+}
+
+/* font-wight */
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* text-align */
+.ta-center {
+    text-align: center;
+}
+
+
+/* font-color */
+.color-primary {
+    color: #3D1101;
+}
+
+.color-accent {
+    color: #EFE9E7;
+}
+
+/* 間距 */
+.m-b-xs {
+    margin-bottom: 5px;
+}
+
+.m-b-s {
+    margin-bottom: 12px;
+}
+
+.m-b-m {
+    margin-bottom: 16px;
+}
+
+.m-b-l {
+    margin-bottom: 22px;
+}
+
+.m-r-s {
+    margin-right: 12px;
+}
+
+
+html {
+    background-color: #efe9e6;
+    font-family: MicrosoftJhengHeiRegular;
+}
+
+.main {
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+}
+
+header .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 31px;
+    background: url(../images/logo_w\(null\).svg) no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height: 24px;
+    display: block;
+    /* 以下三行為圖片取代文字常用 */
+    text-indent: 101%;
+    /*首行縮排，設置為 101% 的用意是讓文字超出頁面，達到隱藏的效果。*/
+    overflow: hidden;
+    /*自動隱藏超出的文字或圖片*/
+    white-space: nowrap;
+    /*文字到達元素最大範圍時，通常會自動換行，但是這邊設置強制不讓他換行。*/
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 16px 31px;
+    display: block;
+    border-bottom: 2px solid transparent;
+    /* transparent 作用為color的參數，表示透明。 */
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* hambuger 在PC上隱藏漢堡選單*/
+.showmenu {
+    display: none;
+}
+
+.banner {
+    background: url(../images/header_desktop.png) no-repeat center;
+    background-size: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.bannerText {
+    margin: 0 auto;
+    width: 460px;
+    position: absolute;
+    left: calc(50% - 460px/2);
+    text-align: center;
+    top: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+/* col-1 */
+.col-1 {
+    padding: 50px 0;
+}
+
+h3 {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 31px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+}
+
+.feature li img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    margin-bottom: 11px;
+}
+
+/* col-2 */
+.col-2 {
+    background-color: #3D1101;
+    width: 100%;
+}
+
+.col-2 .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef-photo {
+    width: 50%;
+}
+
+.chef-photo img {
+    width: 470px;
+    height: 460px;
+}
+
+.chef-t {
+    width: 50%;
+    padding: 0 70px 0 21px;
+}
+
+/* col-3 */
+.col-3 {
+    padding: 50px 42px;
+}
+
+.col-3 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-3 li {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.col-3 li img {
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.col div {
+    width: 220px;
+}
+
+.work {
+    text-align: right;
+}
+
+/* col-4 */
+.col-4 {
+    padding: 50px 0;
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+.col4-contact {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 363px;
+    height: 386px;
+}
+
+.map {
+    margin-right: 32px;
+    border: 1px solid #e4e4e4cc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+input {
+    padding: 6px 14px;
+    border: rgba(204, 204, 204, 1) 1px solid;
+    border-radius: 3px;
+}
+
+.veg {
+    margin-bottom: 60px;
+}
+
+.veg input {
+    margin-right: 36px;
+}
+
+.but-cancel {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.but-cancel:hover {
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.but-ent {
+    background-color: #F56C23;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.but-ent:hover {
+    background-color: #ff8d4f;
+}
+
+.but {
+    text-align: end;
+}
+
+/* footer */
+footer .main {
+    display: flex;
+    padding: 50px 42px;
+    justify-content: space-between;
+}
+
+.footer-l {
+    display: flex;
+}
+
+.about {
+    margin-right: 20px;
+}
+
+.about,
+.contact {
+    width: 299px;
+}
+
+footer .logo {
+    margin-left: 31px;
+    background: url(../images/logo_l@svg.svg) no-repeat;
+    background-size: 100%;
+    width: 243px;
+    height: 48px;
+    display: block;
+    /* 以下三行為圖片取代文字常用 */
+    text-indent: 101%;
+    /*首行縮排，設置為 101% 的用意是讓文字超出頁面，達到隱藏的效果。*/
+    overflow: hidden;
+    /*自動隱藏超出的文字或圖片*/
+    white-space: nowrap;
+    /*文字到達元素最大範圍時，通常會自動換行，但是這邊設置強制不讓他換行。*/
+}
+
+.footer-r ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+}
+
+.footer-r li a {
+    display: block;
+}
+
+.fa-square-google-plus {
+    color: #DB4437;
+}
+
+.fa-square-twitter {
+    color: #41ABE1;
+}
+
+.fa-square-facebook {
+    color: #3A5795;
+}
+
+
+/* ===========login-content**start============== */
+.login-content {
+    padding: 50px;
+}
+
+.login-content h2 {
+    margin: 0 auto;
+    background: url(../images/logo_l@svg.svg) no-repeat;
+    background-size: 100%;
+    width: 243px;
+    height: 48px;
+    display: block;
+    /* 以下三行為圖片取代文字常用 */
+    text-indent: 101%;
+    /*首行縮排，設置為 101% 的用意是讓文字超出頁面，達到隱藏的效果。*/
+    overflow: hidden;
+    /*自動隱藏超出的文字或圖片*/
+    white-space: nowrap;
+    /*文字到達元素最大範圍時，通常會自動換行，但是這邊設置強制不讓他換行。*/
+}
+
+.login-content h3 {
+    margin-bottom: 35px;
+}
+
+.loginBox {
+    margin: 0 auto;
+    border-top: 4px solid #FF5E45;
+    padding: 12px 15px 15px 15px;
+    max-width: 300px;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.loginBox p {
+    margin-bottom: 16px;
+}
+
+.loginBox form {
+    display: block;
+    width: 100%;
+}
+
+.mailInput {
+    position: relative;
+}
+
+.mailInput input {
+    padding: 6px 28px;
+    border: rgba(204, 204, 204, 1) 1px solid;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.mailInput i {
+    position: absolute;
+    opacity: 0.5;
+    left: 5px;
+    top: 10px;
+}
+
+.mailInput {
+    margin-bottom: 15px;
+}
+
+.passwordInput {
+    position: relative;
+}
+
+.passwordInput input {
+    padding: 6px 28px;
+    border: rgba(204, 204, 204, 1) 1px solid;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.passwordInput i {
+    position: absolute;
+    opacity: 0.5;
+    left: 9px;
+    top: 10px;
+}
+
+.loginBox a {
+    display: block;
+    color: #FF5E45;
+    margin-bottom: 30px;
+}
+
+.loginBox a:hover {
+    filter: brightness(150%);
+}
+
+.loginBoxBut .but-cancel {
+    padding: 6px 0;
+    width: 48%;
+}
+
+.loginBoxBut .but-ent {
+    padding: 6px 0;
+    width: 48%;
+}
+
+
+/* ===========login-content**end============== */
+
+
+/* ===========product-Content**start============== */
+.product-Content {
+    padding: 48px 48px 50px 48px;
+    display: flex;
+}
+
+.productList i {
+    margin: 0 15px 20px 0;
+    color: #3D1101;
+}
+
+.productList ul {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.productList li {
+    border-bottom: 1px solid #3D1101;
+}
+
+.productList a {
+    padding: 5px 0;
+    display: block;
+}
+
+.productList a:hover {
+    background-color: #3D1101;
+    color: #fff;
+}
+
+.search {
+    float: left;
+    position: relative;
+}
+
+.search input {
+    background-color: #efe9e6;
+    border: 2px solid #3D1101;
+    width: 499px;
+    height: 32px;
+}
+
+.search form {
+    width: 100%;
+    flex-direction: row;
+}
+
+.search i {
+    position: absolute;
+    background-color: #3D1101;
+    color: #fff;
+    padding: 8px;
+    right: -13px;
+    top: 0px;
+}
+
+.shoppingCart {
+    float: right;
+    margin-right: 20px;
+}
+
+.shoppingCart i {
+    color: #3D1101;
+}
+
+.shoppingCart a {
+    display: inline-block;
+    border-right: 1px solid #3D1101;
+    padding-right: 20px;
+}
+
+.shoppingCart a:nth-child(2) {
+    border-right: 0;
+    margin-left: 17px;
+    position: relative;
+}
+
+.shoppingCart a:nth-child(2):hover {
+    filter: brightness(150%);
+}
+
+.shoppingCart span {
+    position: absolute;
+    background-color: rgba(255, 94, 69, 1);
+    display: block;
+    top: -5px;
+    right: 22px;
+    width: 18px;
+    height: auto;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #ff5e45;
+    border-radius: 50%;
+}
+
+.shoppingCart a:hover {
+    background-color: transparent;
+    color: rgba(255, 94, 69, 1);
+}
+
+.hot_wrap {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    top: -10px;
+    right: -10px;
+    overflow: hidden;
+}
+
+.hot_wrap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 5px solid #008866;
+    top: 1px;
+}
+
+.hot_wrap::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+    border: 5px solid #008866;
+}
+
+.hot {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background: #00CC99;
+    transform: rotate(45deg);
+    text-align: center;
+    width: 101px;
+    height: 20px;
+    color: white;
+    line-height: 1.3;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.productBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productBox li {
+    width: 30%;
+    border-bottom: 0;
+    text-align: center;
+    background-color: #EFE9E7;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.productPhoto a {
+    display: block;
+    position: relative;
+    padding: 0;
+}
+
+.productPhoto a i {
+    position: absolute;
+    color: #fff;
+    left: 10px;
+    top: 10px;
+}
+
+.productPhoto a:hover {
+    filter: brightness(110%);
+}
+
+.productPhoto {
+    position: relative;
+}
+
+.productbody {
+    padding: 10px;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.line {
+    width: 92px;
+    height: 1px;
+    background-color: #3D1101;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.productbody button {
+    border: #FF5E45 solid 2px;
+    border-radius: 3px;
+    color: #FF5E45;
+    margin-top: 13px;
+    padding: 2px 45px;
+}
+
+button:hover {
+    background-color: #FF5E45;
+    color: #fff;
+}
+
+.productbody i {
+    margin: 0;
+    color: #FF5E45;
+}
+
+
+
+/* ===========product-Content**end============== */
+
+/* pad */
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 750px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* col-1 */
+    .col-1 {
+        padding: 0px 10px 50px 10px;
+    }
+
+    .feature li {
+        width: 196px;
+    }
+
+    /* col-2 */
+    .col-2 {
+        padding: 0 10px;
+    }
+
+    .chef-t {
+        padding: 40px 25px 25px 21px;
+    }
+
+    /* col-3 */
+    .col-3 {
+        padding: 50px 0px;
+    }
+
+    /* col-4 */
+    .col-4 {
+        padding: 50px 10px;
+    }
+
+    .map {
+        margin-right: 20px;
+    }
+
+    /* footer */
+    .footer-l {
+        width: 50%;
+    }
+
+    footer .main {
+        padding: 50px 10px;
+    }
+
+    .aboutrest {
+        width: 235px;
+    }
+
+    .contact ul {
+        width: 235px;
+    }
+
+    /* ===========product-Content**start============== */
+    .product-Content {
+        padding: 20px;
+    }
+
+    .search input {
+        width: 286px;
+    }
+
+    .search i {
+        right: 198px;
+        top: 441px;
+    }
+
+    .shoppingCart {
+        margin-right: 0px;
+    }
+
+    .productBox li {
+        width: 44%;
+    }
+    /* ===========product-Content**end============== */
+
+}
+
+/* M */
+@media screen and (max-width: 767px) {
+    header {
+        max-width: 100vw;
+    }
+
+    .main {
+        max-width: 340px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* header */
+    .banner {
+        background: url(../images/header_mobile.png) no-repeat center;
+        background-size: cover;
+        height: 420px;
+        position: relative;
+    }
+
+    header i {
+        color: #fff;
+    }
+
+    /* =====hambuger star===== */
+    .menu {
+        /*隱藏選單開始*/
+        max-height: 0px;
+        overflow: hidden;
+        /*隱藏選單結束*/
+        transition: max-height 2.3s;
+        margin-top: 1px;
+        /*絕對定位疊在網頁上*/
+        position: absolute;
+        z-index: 100;
+        /*header 80px+1px boder 線條*/
+        top: 47px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.75);
+        flex-direction: column;
+    }
+
+    .menu li a {
+        transition: all 0.3s;
+        text-align: center;
+    }
+
+    .menu a:hover {
+        border-bottom: none;
+    }
+
+    .menuIcon {
+        color: #fff;
+    }
+
+    .showmenu {
+        display: block;
+        float: right;
+        margin: 1em;
+    }
+
+    /*jQ點擊後動態在 body 加上 class */
+    .menu-show .menu {
+        max-height: 800px;
+    }
+
+    /* =====hambuger end===== */
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .bannerText {
+        width: 300px;
+        left: calc(50% - 300px/2);
+    }
+
+    /* col-1 */
+    .col-1 h3 {
+        margin-top: 50px;
+    }
+
+    .col-1 title {
+        margin-top: 31px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-1 title li {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    /* col-2 */
+    .col-2 .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chef-photo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .chef-photo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .chef-t {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+
+    /* col-3 */
+    .col-3 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3 li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* col-4 */
+    .col4-contact {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: 386px;
+    }
+
+    .map {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .but-cancel {
+        margin-right: 11px;
+    }
+
+    /* footer */
+    footer .main {
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+
+    .footer-l {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aboutrest {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact ul {
+        width: 235px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        max-width: 100vw;
+    }
+
+    footer .logo {
+        margin-left: 0px;
+    }
+
+    .m-b-l {
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* ===========login-content**start============== */
+    .loginBoxBut .but-cancel {
+        padding: 6px 0;
+        width: 46%;
+    }
+
+    .loginBoxBut .but-ent {
+        padding: 6px 0;
+        width: 46%;
+    }
+
+    /* ===========login-content**end============== */
+
+
+    /* ===========product-Content**start============== */
+    .product-Content {
+        flex-direction: column;
+        padding: 52px 10px;
+    }
+
+    .productList {
+        margin-bottom: 23px;
+    }
+
+    .productList ul {
+        width: 100%;
+    }
+
+    .search {
+        float: none;
+    }
+
+    .search i {
+        right: 31px;
+        top: 676px;
+        margin-bottom: 20px;
+    }
+
+    .productBox li {
+        width: 100%;
+    }
+
+    /* ===========product-Content**end============== */
+}
+
+
+
+/* M */
+@media screen and (max-width: 375px) {
+    .search {
+        margin-bottom: 23px;
+    }
+
+    .search input {
+        width: 297px;
+    }
+
+    .search i {
+        right: 13px;
+    }
+
+    .shoppingCart i {
+        color: #3D1101;
+    }
+
+    .productBox li {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .productPhoto a i {
+        left: 20px;
+        top: 12px;
+    }
+
+    .productbody {
+        margin-bottom: 30px;
+    }
+
+    .productbody button {
+        padding: 2px 71px;
+    }
+
+}
